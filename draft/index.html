@@ -8,61 +8,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="normalize.css" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="style.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navigation umschalten">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="navbar-toggle">
+            <label for="navbar-toggle" class="menu-btn"><span></span></label>
+            <label for="navbar-toggle" class="close"></label>
 
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/news">News</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Verein
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/verein/portrait">Portrait</a></li>
-                        <li><a class="dropdown-item" href="/verein/Organisation">Organisation</a></li>
-                        <li><a class="dropdown-item" href="/verein/chronik">Chronik</a></li>
-                        <li><a class="dropdown-item" href="/verein/vorstand">Vorstand</a></li>
-                        <li><a class="dropdown-item" href="/verein/schiedsrichter">Schiedsrichter</a></li>
-                        <li><a class="dropdown-item" href="/verein/funktionaere">Funktionäre</a></li>
-                        <li><a class="dropdown-item" href="/verein/ehrenmitglieder">Ehrenmitglieder</a></li>
-                    </ul>            
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Teams
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/teams/team1">Team 1</a></li>
-                        <li><a class="dropdown-item" href="/teams/team2">Team 2</a></li>
-                        <li><a class="dropdown-item" href="/teams/team3">Team 3</a></li>
-                    </ul>            
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/sponsoren">Sponsoren</a>
-                </li>
-                
-            </ul>
-        </div>
-    </nav>
+            <div id="nav" class="menu-overlay">
+                <ul>
+                    <li class="nav-item-1"><a>Home</a></li>
+                    <li class="nav-item-1"><a>News</a></li>
+                    <li class="nav-item-1">
+                        <a class="nav-accordion">Verein</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item-2"><a>Portrait</a></li>
+                            <li class="nav-item-2"><a>Organisation</a></li>
+                            <li class="nav-item-2"><a>Chronik</a></li>
+                            <li class="nav-item-2"><a>Vorstand</a></li>
+                            <li class="nav-item-2"><a>Schiedsrichter</a></li>
+                            <li class="nav-item-2"><a>Funktionäre</a></li>
+                            <li class="nav-item-2"><a>Ehrenmitglieder</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item-1">
+                        <a class="nav-accordion">
+                            Teams
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item-2"><a>Team 1</a></li>
+                            <li class="nav-item-2"><a>Team 2</a></li>
+                            <li class="nav-item-2"><a>Team 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item-1">
+                        <a class="nav-link" href="/sponsoren">Sponsoren</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 
-    <!-- Header image-->
-    <img />
 
+
+
+    <div class="content">
+        <!-- Header image-->
+        <img class="img-header" src="img/logo_textunten.svg" />
+
+    </div>
+
+
+    <script src="navbar.js"></script>
+
+</body>
 </body>
 
 </html>
