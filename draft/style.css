@@ -70,7 +70,7 @@ h3 {
   margin: auto;
 }
 
-/* TODO: CSS für Widget */
+/* Next game */
 .main-content-container {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -79,11 +79,17 @@ h3 {
   justify-content: center;
 }
 
+.next-game {
+  border: 2px solid var(--main-dark-blue);
+  width: 100%;
+}
+
 .next-game-teams {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding-top: 0.5rem;
 }
 
 .next-game-team-img {
@@ -103,3 +109,45 @@ h3 {
 }
 
 /* News Homepage */
+.news-article {
+  border-radius: 3px;
+  margin-bottom: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-article-date {
+  font-size: 0.8rem;
+  margin-top: 0px;
+  padding-top: 12px;
+}
+
+.news-article-image {
+  max-height: 200px;
+  object-fit: fill;
+}
+
+.news-article-content {
+  border-top: 0px;
+  border-left: 2px;
+  border-bottom: 2px;
+  border-right: 2px;
+  border-style: solid;
+  border-color: var(--main-dark-blue);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer-content {
+  background-image: url(img/bg/gradient.png);
+  color: var(--font-white);
+}
+
+.footer-content h1,
+.footer-content h2,
+.footer-content h3 {
+  color: var(--font-white);
+}
