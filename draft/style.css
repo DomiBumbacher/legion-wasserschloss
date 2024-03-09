@@ -77,6 +77,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .next-game {
@@ -141,13 +142,44 @@ h3 {
   padding-right: 1rem;
 }
 
-.footer-content {
+/* Sponsoren */
+.sponsors-container {
   background-image: url(img/bg/gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: var(--font-white);
 }
 
-.footer-content h1,
-.footer-content h2,
-.footer-content h3 {
+.sponsors-container h2 {
   color: var(--font-white);
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sponsor img {
+  object-fit: fill;
+  height: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--main-dark-blue);
+  color: var(--font-white);
+}
+
+.footer-logo {
+  max-height: 200px;
+}
+
+#copyright {
+  font-weight: bolder;
+  padding-bottom: 1rem;
 }
