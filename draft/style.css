@@ -1,5 +1,11 @@
 :root {
   --main-dark-blue: #0f1f56;
+
+  --bg: #f6f6f6;
+
+  --font: #444;
+
+  --font-white: #f6f6f6;
 }
 
 @font-face {
@@ -13,19 +19,87 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: 'Mulish';
+  src: url(fonts/Mulish-Regular.ttf);
+}
+
 body {
   font-size: 1rem;
   line-height: 1.4;
-  background-color: #f6f6f6;
-  color: #444;
+  background-color: var(--bg);
+  color: var(--font);
+  font-family: 'Mulish';
 }
 
 h1,
 h2,
 h3 {
   line-height: 1.2;
+  font-family: 'Ubuntu';
+  color: var(--main-dark-blue);
 }
 
-.image-header {
-  margin-top: auto;
+.hero-img {
+  display: flex;
+  height: 100vh;
+
+  max-width: 100%;
+  background-image: url(img/bg/gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
 }
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  object-fit: contain;
+
+  max-width: 80vw;
+  max-height: 80vh;
+
+  width: 80vw;
+
+  margin: auto;
+}
+
+/* TODO: CSS für Widget */
+.main-content-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.next-game-teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.next-game-team-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.next-game-divider {
+  font-size: 2rem;
+}
+
+.next-game-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* News Homepage */

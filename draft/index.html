@@ -25,8 +25,9 @@
                 <ul>
                     <li class="nav-item-1"><a>Home</a></li>
                     <li class="nav-item-1"><a>News</a></li>
-                    <li class="nav-item-1">
-                        <a class="nav-accordion">Verein</a>
+                    <li class="nav-item-1 nav-accordion">
+                        <a>Verein</a>
+                        <span class="accordion-toggle"></span>
                         <ul class="dropdown-menu">
                             <li class="nav-item-2"><a>Portrait</a></li>
                             <li class="nav-item-2"><a>Organisation</a></li>
@@ -37,10 +38,9 @@
                             <li class="nav-item-2"><a>Ehrenmitglieder</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item-1">
-                        <a class="nav-accordion">
-                            Teams
-                        </a>
+                    <li class="nav-item-1 nav-accordion">
+                        <a>Teams</a>
+                        <span class="accordion-toggle"></span>
                         <ul class="dropdown-menu">
                             <li class="nav-item-2"><a>Team 1</a></li>
                             <li class="nav-item-2"><a>Team 2</a></li>
@@ -56,15 +56,32 @@
         </nav>
     </header>
 
-
-
-
-
     <div class="content">
-        <!-- Header image-->
-        <img class="img-header" src="img/logo_textunten.svg" />
+        <div class="hero-img">
+            <div class="logo-container">
+                <img class="logo" src="img/logo_negativ_borderless.svg">
+            </div>
+        </div>
 
+        <div class="main-content-container">
+            <h2>Nächstes Spiel</h2>
+
+            <div class="next-game-teams">
+                <img class="next-game-team-img" src="img/logo.svg">
+                <span class="next-game-divider">vs</span>
+                <img class="next-game-team-img" src="img/opponent.png">
+            </div>
+
+            <div class="next-game-info">
+                <p>Samstag, 09.03.2024 20:00<br>Go Easy Arena</p>
+            </div>
+        </div>
     </div>
+
+    <div class="main-content-container">
+        <h2>News</h2>
+    </div>
+
 
 
     <script src="navbar.js"></script>
