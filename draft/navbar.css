@@ -5,7 +5,7 @@
   height: 100%;
   width: 100%;
 
-  background: #0f1f56;
+  background: var(--clr-primary);
   display: flex;
   justify-content: center;
   overflow-y: auto;
@@ -41,7 +41,7 @@
   top: calc(50% - 1px);
   left: 30%;
   width: 40%;
-  border-bottom: 2px solid var(--font-white);
+  border-bottom: 2px solid var(--white);
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -65,19 +65,39 @@
 }
 #navbar-toggle:checked + .menu-btn:before {
   transform: rotate(45deg);
-  border-color: #fff;
 }
 #navbar-toggle:checked + .menu-btn:after {
   transform: rotate(-45deg);
-  border-color: #fff;
 }
 
 #navbar-toggle {
   display: none;
 }
 
+@media only screen and (min-width: 1200px) {
+  .menu-btn {
+    right: 40px;
+    top: 40px;
+    width: 100px;
+  }
+
+  .menu-btn span,
+  .menu-btn:before,
+  .menu-btn:after {
+    border-bottom: 4px solid var(--white);
+  }
+
+  .menu-btn:before {
+    transform: translateY(-16px);
+  }
+  .menu-btn:after {
+    transform: translateY(16px);
+  }
+}
+
 .menu-overlay ul {
   width: 100%;
+  max-width: 500px;
   position: relative;
   padding-inline-start: 0px;
 }
@@ -96,7 +116,19 @@
   font-weight: bold;
   font-family: 'Ubuntu';
   display: inline-block;
-  color: #f6f6f6;
+  color: var(--font-white);
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item.active a {
+  color: var(--clr-primary-200);
+}
+
+.nav-item a:hover {
+  color: var(--clr-primary-200);
 }
 
 .nav-item-1 {

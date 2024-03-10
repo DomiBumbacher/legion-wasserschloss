@@ -1,11 +1,34 @@
 :root {
-  --main-dark-blue: #0f1f56;
+  --clr-primary-50: #e6e8f0;
+  --clr-primary-100: #bfc6dc;
+  --clr-primary-200: #96a2c4;
+  --clr-primary-300: #6e7eac;
+  --clr-primary-400: #50639c;
+  --clr-primary-500: #31498d;
+  --clr-primary-600: #2b4284;
+  --clr-primary-700: #223979;
+  --clr-primary-800: #1b306d;
+  --clr-primary-900: #0f2056;
+  --clr-primary: var(--clr-primary-900);
+  --clr-secondary-50: #ffebee;
+  --clr-secondary-100: #ffcdd1;
+  --clr-secondary-200: #f29a98;
+  --clr-secondary-300: #e87370;
+  --clr-secondary-400: #f2534b;
+  --clr-secondary-500: #f6432f;
+  --clr-secondary-600: #e8392f;
+  --clr-secondary-700: #d62f29;
+  --clr-secondary-800: #c92822;
+  --clr-secondary: var(--clr-secondary-800);
+  --clr-secondary-900: #ba1b15;
+
+  --main-power-comp-300: #e87370;
+  --main-power-comp-200: #f29a98;
 
   --bg: #f6f6f6;
-
   --font: #444;
-
   --font-white: #f6f6f6;
+  --white: #fff;
 }
 
 @font-face {
@@ -37,7 +60,12 @@ h2,
 h3 {
   line-height: 1.2;
   font-family: 'Ubuntu';
-  color: var(--main-dark-blue);
+  color: var(--clr-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary);
 }
 
 .hero-img {
@@ -88,7 +116,7 @@ h3 {
 }
 
 .next-game {
-  border: 2px solid var(--main-dark-blue);
+  border: 2px solid var(--clr-primary);
   width: 100%;
   max-width: 1200px;
 }
@@ -143,6 +171,15 @@ h3 {
   margin-bottom: 1.4rem;
   display: flex;
   flex-wrap: wrap;
+  transition: all 0.2s ease-in-out;
+}
+
+.news-article a {
+  color: var(--font);
+}
+
+.news-article:hover {
+  transform: scale(1.05);
 }
 
 .news-article-date {
@@ -163,7 +200,7 @@ h3 {
   border-bottom: 2px;
   border-right: 2px;
   border-style: solid;
-  border-color: var(--main-dark-blue);
+  border-color: var(--clr-primary);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 
@@ -207,7 +244,7 @@ h3 {
 
 /* Footer */
 .footer {
-  background-color: var(--main-dark-blue);
+  background-color: var(--clr-primary);
   color: var(--font-white);
 }
 
