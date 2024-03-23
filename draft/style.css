@@ -147,11 +147,16 @@ a {
   padding: 0;
 }
 
+.hero {
+  height: 100%;
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
+  height: 30vh;
   padding-top: 2rem;
-  height: 200px;
+  padding-bottom: 2rem;
 }
 
 .logo {
@@ -185,10 +190,6 @@ a {
     justify-content: center;
     padding-top: 2rem;
     height: 500px;
-  }
-
-  .hero-text {
-    padding-top: 100px;
   }
 
   .hero-text h1 {
