@@ -95,6 +95,7 @@ a {
   background-color: var(--clr-primary);
   color: var(--font-white);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .link-button:hover {
@@ -358,7 +359,7 @@ a {
 }
 
 .news-article:hover {
-  transform: scale(1.05);
+  box-shadow: 0px 5px 10px 0px var(--clr-primary);
 }
 
 .news-article-date {
