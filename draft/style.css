@@ -48,7 +48,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   background-color: var(--bg);
   color: var(--font);
@@ -68,10 +68,27 @@ a {
   color: var(--clr-primary);
 }
 
-.hero-img {
+.main-content-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
-  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+@media only screen and (min-width: 1200px) {
+  .main-content-container {
+    flex-direction: column;
+  }
+}
+
+.hero-bg-img {
+  height: 100vh;
   max-width: 100%;
   background-image: url(img/bg/gradient.png);
   background-repeat: no-repeat;
@@ -81,40 +98,86 @@ a {
 }
 
 .logo-container {
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding-top: 2rem;
+  height: 200px;
 }
 
 .logo {
   object-fit: contain;
-
-  max-width: 80vw;
-  max-height: 80vh;
-
-  width: 80vw;
-
-  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-/* Next game */
-.main-content-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.hero-text p {
+  color: var(--font-white);
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero-text h1 {
+  color: var(--font-white);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.hero-cta {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+}
+
+.hero-cta-link {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  background-color: var(--bg);
+  color: var(--clr-primary);
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  border-style: none;
+  padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 35px;
 }
 
 @media only screen and (min-width: 1200px) {
-  .main-content-container {
-    flex-direction: column;
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    height: 500px;
+  }
+
+  .hero-text {
+    padding-top: 100px;
+  }
+
+  .hero-text h1 {
+    color: var(--font-white);
+    text-transform: uppercase;
+    font-size: 6rem;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+  }
+
+  .hero-cta-link {
+    font-size: 2rem;
+  }
+
+  .hero-cta {
+    justify-content: left;
   }
 }
 
+/* Next game */
 .next-game {
   border: 2px solid var(--clr-primary);
   width: 100%;
