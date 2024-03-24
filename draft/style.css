@@ -47,12 +47,17 @@
   src: url(fonts/Mulish-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+
 body {
   font-size: 1.25rem;
   line-height: 1.4;
   background-color: var(--bg);
   color: var(--font);
-  font-family: 'Mulish';
+  font-family: 'Montserrat';
 }
 
 h1,
