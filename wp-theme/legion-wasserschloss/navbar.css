@@ -1,0 +1,137 @@
+.menu-overlay {
+  position: fixed;
+  top: 1;
+  right: -100%;
+  height: 100vh;
+  width: 100%;
+  background: var(--clr-primary);
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  transition: all 0.6s ease-in-out;
+  padding-top: 3rem;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+#navbar-toggle:checked ~ .menu-overlay {
+  right: 0;
+}
+
+#navbar-toggle:checked ~ .menu-btn-open {
+  display: none;
+}
+
+#navbar-toggle:checked ~ .menu-btn-close {
+  display: block;
+}
+
+body:has(#navbar-toggle:checked) {
+  overflow: hidden;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 0;
+  right: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu-btn-close {
+  z-index: 2;
+}
+
+#navbar-toggle {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu-btn {
+    right: 40px;
+    top: 40px;
+    width: 100px;
+  }
+}
+
+.menu-overlay ul {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  padding-inline-start: 0px;
+}
+
+.menu-overlay ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+
+.menu-overlay ul li a {
+  position: relative;
+  text-decoration: none;
+  padding: 0 10px;
+  font-weight: bold;
+  font-family: 'Ubuntu';
+  display: inline-block;
+  color: var(--font-white);
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item.active a {
+  color: var(--clr-primary-200);
+}
+
+.nav-item a:hover {
+  color: var(--clr-primary-200);
+}
+
+.nav-item-1 {
+  font-size: 2.5rem;
+}
+
+.nav-item-2 {
+  font-size: 2rem;
+}
+
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-toggle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  text-align: center;
+}
+
+.accordion-toggle::after {
+  content: '';
+  background-image: url(img/chevron_down.svg);
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.accordion-toggle.active::after {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}

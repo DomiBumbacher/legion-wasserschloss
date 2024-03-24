@@ -1,0 +1,537 @@
+/*
+Theme Name: Legion Wasserschloss
+Author: Dominik Bumbacher
+Description: Template for the homepage of Legion Wasserschloss
+Version: 1.0
+*/
+
+:root {
+  --clr-primary-50: #e6e8f0;
+  --clr-primary-100: #bfc6dc;
+  --clr-primary-200: #96a2c4;
+  --clr-primary-300: #6e7eac;
+  --clr-primary-400: #50639c;
+  --clr-primary-500: #31498d;
+  --clr-primary-600: #2b4284;
+  --clr-primary-700: #223979;
+  --clr-primary-800: #1b306d;
+  --clr-primary-900: #0f2056;
+  --clr-primary: var(--clr-primary-900);
+  --clr-secondary-50: #ffebee;
+  --clr-secondary-100: #ffcdd1;
+  --clr-secondary-200: #f29a98;
+  --clr-secondary-300: #e87370;
+  --clr-secondary-400: #f2534b;
+  --clr-secondary-500: #f6432f;
+  --clr-secondary-600: #e8392f;
+  --clr-secondary-700: #d62f29;
+  --clr-secondary-800: #c92822;
+  --clr-secondary: var(--clr-secondary-800);
+  --clr-secondary-900: #ba1b15;
+
+  --main-power-comp-300: #e87370;
+  --main-power-comp-200: #f29a98;
+
+  --bg: #f6f6f6;
+  --font: #444;
+  --font-white: #f6f6f6;
+  --white: #fff;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/Ubuntu-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url(fonts/Mulish-Regular.ttf);
+}
+
+body {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  background-color: var(--bg);
+  color: var(--font);
+  font-family: 'Mulish';
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-family: 'Ubuntu';
+  color: var(--clr-primary);
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary);
+}
+
+.link-button {
+  margin-top: 1rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  border-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 35px;
+  background-color: var(--clr-primary);
+  color: var(--font-white);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-button:hover {
+  color: var(--clr-primary-100);
+  box-shadow: 0px 5px 10px 0px var(--clr-primary);
+}
+
+.link-button.inverted {
+  background-color: var(--bg);
+  color: var(--clr-primary);
+}
+
+.link-button.inverted:hover {
+  background-color: var(--clr-primary-50);
+}
+
+.main-content-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-content-container {
+    flex-direction: column;
+  }
+}
+
+.content-section {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* Hero */
+.hero-bg-img {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(img/bg/gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+}
+
+.hero {
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.logo {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.hero-text p {
+  color: var(--font-white);
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero-text h1 {
+  color: var(--font-white);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.cta-link {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    height: 500px;
+  }
+
+  .hero-text h1 {
+    color: var(--font-white);
+    text-transform: uppercase;
+    font-size: 6rem;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+  }
+
+  .hero-cta-link {
+    font-size: 2rem;
+  }
+
+  .hero-cta {
+    justify-content: left;
+  }
+}
+
+/* Next game */
+.bg-blue {
+  background-color: var(--clr-primary);
+}
+
+.bg-blue h2 {
+  color: var(--font-white);
+}
+
+.next-game {
+  background-color: var(--bg);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.next-game-teams {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+
+.next-game-team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.next-game-divider {
+  font-size: 2rem;
+  color: var(--clr-primary);
+}
+
+.next-game-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .next-game-teams {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.next-game-grid {
+  background-color: var(--bg);
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 4fr 1fr 4fr;
+}
+
+.next-game-team-img-grid {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center;
+  padding-top: 10px;
+}
+
+.next-game-divider-grid {
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+  color: var(--clr-primary);
+}
+
+.next-game-info-grid {
+  grid-row: 2;
+  grid-column: 1 / 4;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .next-game-grid {
+    max-height: 250px;
+    background-color: var(--bg);
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .next-game-divider-grid {
+    font-size: 3rem;
+    grid-row: 2;
+  }
+
+  .next-game-info-grid {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .next-game-team-img-grid {
+    width: 180px;
+    height: 180px;
+    grid-row: 1/4;
+    padding-top: 0px;
+  }
+}
+
+/* Unsere Region */
+.region-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.region-content-map {
+  max-width: 500px;
+}
+
+.region-content-map img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.region-content-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .region-content {
+    flex-direction: row;
+  }
+}
+
+/* First team */
+.first-team {
+  max-height: 1000px;
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(img/first-team.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-team-container {
+  max-height: 1000px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-team-container h2 {
+  text-align: left;
+  color: var(--font-white);
+}
+
+@media only screen and (min-width: 1200px) {
+  .first-team-container h2 {
+    font-size: 3rem;
+  }
+}
+
+/* News Homepage */
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 1rem;
+}
+
+.news-article {
+  border-radius: 3px;
+  margin-bottom: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.2s ease-in-out;
+}
+
+.news-article a {
+  line-height: 0px;
+}
+
+.news-article a div {
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 1200px) {
+  .news {
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-between;
+  }
+
+  .news-article {
+    max-width: 380px;
+  }
+}
+
+.news-article a {
+  color: var(--font);
+}
+
+.news-article:hover {
+  box-shadow: 0px 5px 10px 0px var(--clr-primary);
+}
+
+.news-article-date {
+  font-size: 0.8rem;
+  margin-top: 0px;
+  padding-top: 12px;
+}
+
+.news-article-image {
+  max-height: 200px;
+  width: 100%;
+  object-fit: fill;
+}
+
+.news-article-content {
+  border-top: 0px;
+  border-left: 2px;
+  border-bottom: 2px;
+  border-right: 2px;
+  border-style: solid;
+  border-color: var(--clr-primary);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Sponsoren */
+.sponsors {
+  background-image: url(img/bg/gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--font-white);
+}
+
+.sponsors h2 {
+  color: var(--font-white);
+}
+
+.sponsors p {
+  text-align: center;
+}
+
+.sponsors-list {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .sponsors-list {
+    flex-direction: row;
+    width: 1200px;
+  }
+}
+
+.sponsor img {
+  object-fit: fill;
+  height: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--clr-primary);
+  color: var(--font-white);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-container p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer-container a {
+  font-weight: bolder;
+  color: var(--font-white);
+  text-decoration: underline;
+}
+
+.footer-logo {
+  max-height: 100px;
+}
+
+#copyright {
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
