@@ -392,6 +392,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  align-items: flex-start;
   padding-bottom: 1rem;
 }
 
@@ -401,6 +402,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   transition: all 0.2s ease-in-out;
+}
+
+.news-article-no-image {
+  border: 2px solid var(--clr-primary);
+  border-radius: 3px;
+  border-radius: 3px;
 }
 
 .news-article a {
@@ -455,6 +462,10 @@ a {
 
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.news-article-content-no-image {
+  border-style: none;
 }
 
 /* Sponsoren */

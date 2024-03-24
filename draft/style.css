@@ -401,6 +401,17 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
+.news-article-no-image {
+  border-top: 2px;
+  border-left: 2px;
+  border-bottom: 2px;
+  border-right: 2px;
+  border-style: solid;
+  border-color: var(--clr-primary);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
 .news-article a {
   line-height: 0px;
 }
@@ -453,6 +464,10 @@ a {
 
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.news-article-content-no-image {
+  border-style: none;
 }
 
 /* Sponsoren */
