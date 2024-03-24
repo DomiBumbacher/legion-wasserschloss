@@ -60,6 +60,11 @@ body:has(#navbar-toggle:checked) {
   }
 }
 
+.menu-btn-open-inverted {
+  filter: invert(11%) sepia(23%) saturate(5415%) hue-rotate(213deg)
+    brightness(105%) contrast(103%);
+}
+
 .menu-overlay ul {
   width: 100%;
   max-width: 500px;

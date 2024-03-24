@@ -466,6 +466,11 @@ a {
   padding-right: 1rem;
 }
 
+.news-article-content p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .news-article-content-no-image {
   border-style: none;
 }
