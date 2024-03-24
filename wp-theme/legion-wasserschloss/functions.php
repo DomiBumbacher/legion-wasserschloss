@@ -1,7 +1,8 @@
 <?php
 
+/* Styles and Scripts */
 function navbar(){
-    wp_enqueue_script( 'navbar-js', get_template_directory_uri() . '/scripts/navbar.js');
+    wp_enqueue_script( 'navbar-js', get_template_directory_uri() . '/scripts/navbar.js', array(), false, array('strategy'  => 'defer', ));
     wp_enqueue_style( 'navbar-css', get_template_directory_uri() . '/navbar.css' );
 }
 
@@ -12,3 +13,17 @@ function styles(){
 
 add_action('wp_enqueue_scripts', 'styles');
 add_action('wp_enqueue_scripts', 'navbar');
+
+
+/* Menu */
+require_once('navwalker.php');
+
+function register_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Hauptmenü' )
+     )
+   );
+ }
+
+ add_action( 'init', 'register_menus' );

@@ -15,7 +15,12 @@
             <label for="navbar-toggle" class="menu-btn menu-btn-open"><img src="<?php echo get_bloginfo('template_url') ?>/img/burger.svg"></label>
             <label for="navbar-toggle" class="menu-btn menu-btn-close" hidden><img src="<?php echo get_bloginfo('template_url') ?>/img/close.svg"></label>
 
-            <div id="nav" class="menu-overlay">
+               <?php wp_nav_menu( array( 'theme_location' => 'header-menu',
+                                            'container_class' => 'menu-overlay',
+                                            'container_id' => 'nav',
+                                            'walker' => new Custom_Navwalker() ) ); ?> 
+            <!--
+<div id="nav" class="menu-overlay">
                 <ul>
                     <li class="nav-item nav-item-1 active"><a>Home</a></li>
                     <li class="nav-item nav-item-1"><a>News</a></li>
@@ -47,5 +52,7 @@
                     </li>
                 </ul>
             </div>
+            -->
+            
         </nav>
     </header>
