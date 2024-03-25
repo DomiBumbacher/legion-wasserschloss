@@ -1,0 +1,73 @@
+.wpcf7 {
+  width: 100%;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='date'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--clr-primary-300);
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  resize: none;
+}
+
+input[type='text']:active,
+input[type='text']:focus,
+input[type='email']:active,
+input[type='email']:focus,
+input[type='date']:active,
+input[type='date']:focus,
+select:active,
+select:focus,
+textarea:active,
+textarea:focus {
+  border: 2px solid var(--clr-primary-700);
+  background-color: var(--clr-primary-50);
+  outline: none;
+}
+
+input[type='submit'] {
+  float: right;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  border-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 35px;
+  background-color: var(--clr-primary);
+  color: var(--font-white);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type='submit']:hover {
+  color: var(--clr-primary-100);
+  box-shadow: 0px 5px 10px 0px var(--clr-primary);
+}
+
+.wpcf7-form.invalid > .wpcf7-response-output,
+.wpcf7-form.unaccepted > .wpcf7-response-output,
+.wpcf7-form.payment-required > .wpcf7-response-output {
+  display: none;
+}
+
+.wpcf7-form.sent > p > input[type='submit'],
+.wpcf7-spinner {
+  display: none;
+}
+
+.wpcf7-form.sent > .wpcf7-response-output {
+  margin: 0px 0px 0px 0px;
+  padding: 12px;
+  border-radius: 5px;
+}

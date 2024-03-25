@@ -17,7 +17,7 @@
                     in der Region Baden-Brugg.
                 </p>
                 <div class="hero-cta cta-link">
-                    <a class="link-button inverted hero-cta-link">Legion beitreten</a>
+                    <a class="link-button inverted hero-cta-link" href="legion-beitreten">Legion beitreten</a>
                 </div>
             </div>
         </div>
@@ -25,6 +25,7 @@
     </div>
 </div>
 
+<!-- TODO: Add with games
 <section class="content-section bg-blue">
     <div class="main-content-container ">
         <h2>Nächstes Spiel</h2>
@@ -39,7 +40,7 @@
         </div>
     </div>
 </section>
-
+-->
 
 <section class="content-section">
     <div class="main-content-container">
@@ -58,7 +59,7 @@
                     Potenzial in ihren jeweiligen Leistungsklassen an 11 Standorten zu verwirklichen.
                 </p>
                 <div class="cta-link">
-                    <a class="link-button">Zum Fusionsprozess</a>
+                    <a class="link-button" href="fusionsprozess">Zum Fusionsprozess</a>
                 </div>
             </div>
         </div>
@@ -73,7 +74,7 @@
                 Die erste Mannschaft
             </h2>
             <div class="hero-cta">
-                <a class="link-button inverted hero-cta">Mehr zur Mannschaft</a>
+                <a class="link-button inverted hero-cta" href="https://uhbb.ch/herren_1._liga_gf_uhbb_/teamPage/home/15862">Mehr zur Mannschaft</a>
             </div>
 
         </div>
