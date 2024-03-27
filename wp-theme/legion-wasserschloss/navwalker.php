@@ -36,7 +36,7 @@ if ( ! class_exists( 'Custom_Navwalker' ) ) {
 
             if($depth == 0){
                 if ( $args->has_children ) {
-                    $output .= "\n$indent<li class=\"" . $class_names ."\"><a href=\"" . $href . "\">" . $item->title . "</a>\n<span class=\"accordion-toggle\"></span>\n";
+                    $output .= "\n$indent<li class=\"" . $class_names ."\"><a>" . $item->title . "</a>\n<span class=\"accordion-toggle\"></span>\n";
                 }else{
                     $output .= "\n$indent<li class=\"" . $class_names ."\"><a href=\"" . $href . "\">" . $item->title . "</a>\n";
                 }
