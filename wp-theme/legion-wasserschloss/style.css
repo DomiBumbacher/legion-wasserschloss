@@ -401,7 +401,7 @@ a {
   align-content: center;
   padding-bottom: 1rem;
   width: 100%;
-  gap: 40px;
+  gap: 30px;
 }
 
 .news-article {
@@ -411,6 +411,7 @@ a {
   flex-wrap: wrap;
   transition: all 0.2s ease-in-out;
   max-width: 380px;
+  height: 100%;
 }
 
 .news-article-no-image {
