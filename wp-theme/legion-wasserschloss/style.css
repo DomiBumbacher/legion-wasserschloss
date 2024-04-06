@@ -400,8 +400,9 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  align-items: flex-start;
   padding-bottom: 1rem;
+  width: 100%;
+  gap: 40px;
 }
 
 .news-article {
@@ -410,6 +411,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   transition: all 0.2s ease-in-out;
+  max-width: 380px;
 }
 
 .news-article-no-image {
@@ -430,11 +432,6 @@ a {
   .news {
     flex-direction: row;
     width: 1200px;
-    justify-content: space-between;
-  }
-
-  .news-article {
-    max-width: 380px;
   }
 }
 
