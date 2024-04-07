@@ -122,14 +122,14 @@ a {
 .main-content-container {
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
   padding-bottom: 1rem;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.main-content-container h2 {
+  text-align: center;
 }
 
 .main-content-container-full {
@@ -141,6 +141,9 @@ a {
 
 @media only screen and (min-width: 1200px) {
   .main-content-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
   }
 }
@@ -153,6 +156,7 @@ a {
 /* Hero */
 .hero-bg-img {
   height: 100vh;
+  min-height: 780px;
   max-width: 100%;
   background-image: url(img/bg/gradient.png);
   background-repeat: no-repeat;
@@ -500,6 +504,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   gap: 4rem;
 }
 
