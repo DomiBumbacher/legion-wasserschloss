@@ -146,6 +146,10 @@ a {
     align-content: center;
     flex-direction: column;
   }
+
+  .main-content-container-full {
+    align-content: flex-start;
+  }
 }
 
 .content-section {
