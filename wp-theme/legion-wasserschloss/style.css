@@ -145,6 +145,7 @@ a {
   }
 
   .main-content-container-full {
+    justify-content: center;
     align-content: flex-start;
   }
 }
