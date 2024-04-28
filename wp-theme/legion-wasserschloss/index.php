@@ -28,7 +28,7 @@
 <!-- TODO: Add with games
 <section class="content-section bg-blue">
     <div class="main-content-container ">
-        <h2>Nächstes Spiel</h2>
+        <h2 class="fp-heading">Nächstes Spiel</h2>
 
         <div class="next-game-grid">
             <img class="next-game-team-img-grid" src="<?php echo get_bloginfo('template_url') ?>/img/logo.svg">
@@ -44,7 +44,7 @@
 
 <section class="content-section">
     <div class="main-content-container">
-        <h2>Unsere Region</h2>
+        <h2 class="fp-heading">Unsere Region</h2>
 
         <div class="region-content">
             <div class="region-content-map">
@@ -69,7 +69,7 @@
 <section class="content-section first-team">
     <div class="main-content-container">
         <div class="first-team-container">
-            <h2>
+            <h2 class="fp-heading">
                 Unsere Helden:<br>
                 Die erste Mannschaft
             </h2>
@@ -83,7 +83,7 @@
 
 <section class="content-section">
     <div class="main-content-container">
-        <h2>News</h2>
+        <h2 class="fp-heading">News</h2>
 
         <div class="news">
             <?php if ( have_posts() ) : ?>

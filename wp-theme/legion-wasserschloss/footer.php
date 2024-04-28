@@ -1,6 +1,6 @@
  <section class="content-section sponsors">
         <div class=" main-content-container">
-            <h2>Sponsoren</h2>
+            <h2 class="fp-heading">Sponsoren</h2>
             <p>Herzlichen Dank geht an unsere geschätzten Sponsoren und Partner</p>
 
             <div class="sponsors-list">
