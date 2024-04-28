@@ -17,7 +17,7 @@
                     in der Region Baden-Brugg.
                 </p>
                 <div class="hero-cta cta-link">
-                    <a class="link-button inverted hero-cta-link" href="legion-beitreten">Legion beitreten</a>
+                    <a class="link-button inverted hero-cta-link" href="legion-beitreten">Legion kontaktieren</a>
                 </div>
             </div>
         </div>
