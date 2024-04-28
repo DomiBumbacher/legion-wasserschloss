@@ -43,7 +43,7 @@
             <div class="footer-container">
                 <img class="footer-logo" src="<?php echo get_bloginfo('template_url') ?>/img/logo_textrechts_negativ.svg">
                 <div>
-                    <p><a>Impressum</a></p>
+                    <p><a href="impressum">Impressum</a></p>
                     <span id="copyright">© Legion Wasserschloss 2024</span>
                 </div>
             </div>
