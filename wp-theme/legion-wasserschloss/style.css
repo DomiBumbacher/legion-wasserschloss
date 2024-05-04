@@ -54,6 +54,11 @@ Version: 1.0
   src: url(fonts/Mulish-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'RubikMono';
+  src: url(fonts/RubikMonoOne-Regular.ttf);
+}
+
 body {
   font-size: 1.25rem;
   line-height: 1.4;

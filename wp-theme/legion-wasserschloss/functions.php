@@ -9,6 +9,7 @@ function navbar(){
 function styles(){
     wp_enqueue_style( 'normalize', get_template_directory_uri() . '/normalize.css' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'teams', get_template_directory_uri() . '/team.css' );
     wp_enqueue_style( 'forms-cf7', get_template_directory_uri() . '/forms_cf7.css' );
 }
 
