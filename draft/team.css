@@ -51,9 +51,9 @@
 
 .team-group > a > p {
   color: var(--font-white);
-  line-height: 0.6;
   font-size: 1.5rem;
   text-transform: uppercase;
+  margin: 0.25rem;
 }
 
 .team-group > a > p > span {
