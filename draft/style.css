@@ -138,6 +138,10 @@ a {
   min-height: 100vh;
 }
 
+.main-content-container-full h1 {
+  max-width: calc(100% - 80px);
+}
+
 @media only screen and (min-width: 1200px) {
   .main-content-container {
     display: flex;
@@ -149,6 +153,10 @@ a {
   .main-content-container-full {
     justify-content: flex-start;
     align-content: flex-start;
+  }
+
+  .main-content-container-full h1 {
+    max-width: 100%;
   }
 }
 

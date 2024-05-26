@@ -2,7 +2,9 @@ var acc = document.getElementsByClassName('nav-accordion');
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function () {
+  acc[i].addEventListener('click', function (e) {
+    e.stopPropagation();
+
     var panel = getChildByClass(this, 'dropdown-menu');
     var toggle = getChildByClass(this, 'accordion-toggle');
 
@@ -17,6 +19,18 @@ for (i = 0; i < acc.length; i++) {
       panel.style.marginTop = '1rem';
       panel.style.marginBottom = '1rem';
     }
+
+    // After a delay because of the animation (scrollheight is updated after the animation)
+    setTimeout(function () {
+      // Reset parent style
+      var parent = panel.parentElement;
+      while (parent) {
+        if (parent.classList.contains('dropdown-menu')) {
+          parent.style.maxHeight = parent.scrollHeight + 'px';
+        }
+        parent = parent.parentElement;
+      }
+    }, 150);
   });
 }
 

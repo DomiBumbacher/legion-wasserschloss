@@ -5,19 +5,23 @@
 
             <div class="sponsors-list">
                 <div class="sponsor">
-                    <!--
                     <a href="https://www.craftsportswear.ch/de/">
-                        <img src="<?php echo get_bloginfo('template_url') ?>/img/demo/craft.png" />
+                        <img src="<?php echo get_bloginfo('template_url') ?>/img/sponsoren/craft_350_200.png" />
                     </a>
-                    -->
                 </div>
 
                 <div class="sponsor">
-                    
+                    <a href="https://bauersport.ch/">
+                        <img src="<?php echo get_bloginfo('template_url') ?>/img/sponsoren/bauer_sport_350_200.png" />
+                    </a>
                 </div>
+
                 <div class="sponsor">
-                    
+                    <a href="https://www.buerki-moser.ch/">
+                        <img src="<?php echo get_bloginfo('template_url') ?>/img/sponsoren/buerki_moser_350_200.png" />
+                    </a>
                 </div>
+
                 <div class="sponsor">
                     
                 </div>
