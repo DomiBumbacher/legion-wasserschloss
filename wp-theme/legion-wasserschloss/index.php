@@ -74,7 +74,7 @@
                 Die erste Mannschaft
             </h2>
             <div class="hero-cta">
-                <a class="link-button inverted hero-cta" href="https://uhbb.ch/herren_1._liga_gf_uhbb_/teamPage/home/15862">Mehr zur Mannschaft</a>
+                <a class="link-button inverted hero-cta" href="/herren-1">Mehr zur Mannschaft</a>
             </div>
 
         </div>
