@@ -33,9 +33,7 @@ textarea:focus {
 
 input[type='submit'] {
   float: right;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   font-family: 'Ubuntu';
   font-weight: bold;
   border-style: none;
