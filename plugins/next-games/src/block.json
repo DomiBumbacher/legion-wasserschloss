@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "lws/next-games",
+	"version": "0.1.0",
+	"title": "Next Games",
+	"category": "widgets",
+	"icon": "table",
+	"description": "Näcshte Spiele eines Teams, geladen von Swiss Unihockey",
+	"example": {},
+	"attributes": {
+		"season": {
+			"type": "integer",
+			"default": 2024
+		},
+		"teamid": {
+			"type": "integer"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "next-games",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-lws-next-games {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+}
+
+.table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #f6f6f6;
+}
+
+.table th {
+	padding: 0.75rem;
+	vertical-align: top;
+}
+
+.table td {
+	padding: 0.75rem;
+	vertical-align: top;
+	border-top: 1px solid #f6f6f6;
+	max-width: 280px;
+	white-space: wrap;
+}
