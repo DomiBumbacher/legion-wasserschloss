@@ -1,0 +1,16 @@
+.player-bg {
+  background-image: url(img/bg/gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.player * {
+  color: var(--font-white);
+}
+
+.player h2 {
+  color: var(--font-white);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
