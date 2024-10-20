@@ -516,11 +516,17 @@ a {
 
 .sponsors-list {
   padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   gap: 4rem;
+}
+
+.sponsors-gold,
+.sponsors-silver {
+  justify-content: center;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -533,13 +539,22 @@ a {
 .sponsor {
   background-color: var(--bg);
   height: 200px;
+  max-width: 350px;
+}
+
+.sponsor-gold {
+  height: 400px;
+  max-width: 100%;
+}
+
+.sponsor-silver {
+  max-width: 550px;
 }
 
 .sponsor img {
   object-fit: fill;
   height: 100%;
   max-width: 100%;
-  max-height: 200px;
   width: 100%;
 }
 
