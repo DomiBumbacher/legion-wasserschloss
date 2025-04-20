@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "lws/next-games",
+	"name": "lws/lws-next-games",
 	"version": "0.1.0",
-	"title": "Next Games",
+	"title": "LWS Next Games",
 	"category": "widgets",
-	"icon": "table",
-	"description": "Näcshte Spiele eines Teams, geladen von Swiss Unihockey",
+	"icon": "smiley",
+	"description": "This block show the next games for a given LWS team.",
 	"example": {},
 	"attributes": {
 		"season": {
@@ -20,7 +20,7 @@
 	"supports": {
 		"html": false
 	},
-	"textdomain": "next-games",
+	"textdomain": "lws-next-games",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

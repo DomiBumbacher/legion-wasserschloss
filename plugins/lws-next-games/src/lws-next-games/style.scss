@@ -5,7 +5,7 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-lws-result-table {
+ .wp-block-lws-next-games {
 	background-color: #21759b;
 	color: #fff;
 	padding: 2px;
@@ -17,7 +17,6 @@
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
-	white-space: nowrap;
 }
 
 .table {
@@ -43,18 +42,6 @@
 	padding: 0.75rem;
 	vertical-align: top;
 	border-top: 1px solid #f6f6f6;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.lws {
-	font-weight: bold;
-}
-
-.borderRight {
-	border-right-width: 1px;
-	border-right-style: dashed;
-	border-right-color: #f6f6f6;
+	max-width: 280px;
+	white-space: wrap;
 }

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "lws/result-table",
+	"name": "lws/lws-result-table",
 	"version": "0.1.0",
-	"title": "Result Table",
+	"title": "LWS Result Table",
 	"category": "widgets",
-	"icon": "table",
-	"description": "Tabelle einer Gruppe, geladen von Swiss Unihockey",
+	"icon": "smiley",
+	"description": "This block show the current standings for a given LWS team.",
 	"example": {},
 	"attributes": {
 		"season": {
@@ -26,7 +26,7 @@
 	"supports": {
 		"html": false
 	},
-	"textdomain": "result-table",
+	"textdomain": "lws-result-table",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
