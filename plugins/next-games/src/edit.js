@@ -40,14 +40,14 @@ export default function Edit({ attributes, setAttributes }) {
 							<TextControl
 								label="Saison"
 								value={attributes.season}
-								onChange={(season) => setAttributes({ season })}
+								onChange={(season) => setAttributes({ season: parseInt(season) })}
 							/>
 						</PanelRow>
 						<PanelRow>
 							<TextControl
 								label="Team Id"
 								value={attributes.teamid}
-								onChange={(teamid) => setAttributes({ teamid })}
+								onChange={(teamid) => setAttributes({ teamid: parseInt(teamid) })}
 							/>
 						</PanelRow>
 					</PanelBody>

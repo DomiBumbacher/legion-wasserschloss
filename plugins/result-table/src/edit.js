@@ -40,28 +40,28 @@ export default function Edit({ attributes, setAttributes }) {
 							<TextControl
 								label="Saison"
 								value={attributes.season}
-								onChange={(season) => setAttributes({ season })}
+								onChange={(season) => setAttributes({ season: parseInt(season) })}
 							/>
 						</PanelRow>
 						<PanelRow>
 							<TextControl
 								label="Liga"
 								value={attributes.league}
-								onChange={(league) => setAttributes({ league })}
+								onChange={(league) => setAttributes({ league: parseInt(league) })}
 							/>
 						</PanelRow>
 						<PanelRow>
 							<TextControl
 								label="Game class"
 								value={attributes.game_class}
-								onChange={(game_class) => setAttributes({ game_class })}
+								onChange={(game_class) => setAttributes({ game_class: parseInt(game_class) })}
 							/>
 						</PanelRow>
 						<PanelRow>
 							<TextControl
 								label="Gruppe"
 								value={attributes.group}
-								onChange={(group) => setAttributes({ group })}
+								onChange={(group) => setAttributes({ group: parseInt(group) })}
 							/>
 						</PanelRow>
 					</PanelBody>
