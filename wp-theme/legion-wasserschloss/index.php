@@ -70,7 +70,7 @@
     <div class="main-content-container">
         <div class="first-team-container">
             <h2 class="fp-heading">
-                Unsere Helden:<br>
+                Unsere Legionäre:<br>
                 Die erste Mannschaft
             </h2>
             <div class="hero-cta">

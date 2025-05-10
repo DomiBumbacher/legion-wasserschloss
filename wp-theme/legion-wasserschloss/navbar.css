@@ -102,11 +102,25 @@ body:has(#navbar-toggle:checked) {
 }
 
 .nav-item-1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .nav-item-2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-item-1 {
+    font-size: 2.5rem;
+  }
+  
+  .nav-item-2 {
+    font-size: 2rem;
+  }
 }
 
 .dropdown-menu {
@@ -118,7 +132,7 @@ body:has(#navbar-toggle:checked) {
 .accordion-toggle {
   display: block;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 1.5rem;
   text-align: center;
 }
