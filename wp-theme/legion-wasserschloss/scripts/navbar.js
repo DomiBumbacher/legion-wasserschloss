@@ -18,8 +18,8 @@ for (i = 0; i < acc.length; i++) {
       if(panel.scrollHeight){
         panel.style.maxHeight = (panel.scrollHeight + 50) + 'px';
       }
-      panel.style.marginTop = '0.3rem';
-      panel.style.marginBottom = '0.3rem';
+      panel.style.marginTop = '0.7rem';
+      panel.style.marginBottom = '0.7rem';
     }
 
     // After a delay because of the animation (scrollheight is updated after the animation)
