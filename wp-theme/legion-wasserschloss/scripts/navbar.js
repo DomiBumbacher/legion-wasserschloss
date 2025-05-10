@@ -15,7 +15,9 @@ for (i = 0; i < acc.length; i++) {
       panel.style.marginTop = null;
       panel.style.marginBottom = null;
     } else {
-      panel.style.maxHeight = parent.scrollHeight + 'px';
+      if(panel.scrollHeight){
+        panel.style.maxHeight = (panel.scrollHeight + 50) + 'px';
+      }
       panel.style.marginTop = '0.3rem';
       panel.style.marginBottom = '0.3rem';
     }
@@ -26,7 +28,9 @@ for (i = 0; i < acc.length; i++) {
       var parent = panel.parentElement;
       while (parent) {
         if (parent.classList.contains('dropdown-menu')) {
-          parent.style.maxHeight = parent.scrollHeight + 'px';
+          if(parent.scrollHeight){
+            parent.style.maxHeight = (parent.scrollHeight + 50) + 'px';
+          }
         }
         parent = parent.parentElement;
       }
