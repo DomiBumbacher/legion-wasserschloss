@@ -15,7 +15,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.marginTop = null;
       panel.style.marginBottom = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.maxHeight = (parent.scrollHeight + 50) + 'px';
       panel.style.marginTop = '0.3rem';
       panel.style.marginBottom = '0.3rem';
     }
@@ -26,7 +26,7 @@ for (i = 0; i < acc.length; i++) {
       var parent = panel.parentElement;
       while (parent) {
         if (parent.classList.contains('dropdown-menu')) {
-          parent.style.maxHeight = parent.scrollHeight + 'px';
+          parent.style.maxHeight = (parent.scrollHeight + 50) + 'px';
         }
         parent = parent.parentElement;
       }
