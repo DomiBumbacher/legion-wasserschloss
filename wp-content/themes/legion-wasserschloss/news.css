@@ -1,4 +1,41 @@
-/* News Homepage */
+.news-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* spacing between input and button */
+  margin-bottom: 2rem;
+    }
+
+@media only screen and (min-width: 600px) {
+  .news-search {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* spacing between input and button */
+  margin-bottom: 2rem;
+    }
+
+    .news-search-input {
+        flex: 1; /* optional, makes the input grow to fill space */
+    }
+}
+
+.news-search-btn {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  border-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 35px;
+  background-color: var(--clr-primary);
+  color: var(--font-white);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
 .news-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -9,8 +46,6 @@
   gap: 30px;
 }
 
-
-/* News Homepage */
 .news-link-container > a {
   margin-top: 1rem;
   display: inline-block;
