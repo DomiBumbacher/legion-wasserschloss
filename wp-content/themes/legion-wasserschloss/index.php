@@ -87,37 +87,37 @@
 
         <div class="news">
             <?php 
+
+                $categoryNewsId = get_cat_ID( 'News' );
+            
                 $argsNews = array(
                     'numberposts'	=> 3,
-                    'category'		=> 'News'
+                    'category'		=> $categoryNewsId,
                 );
 
-                $newsPosts = get_posts( $args );
+                $newsPosts = get_posts( $argsNews );
 
-                $output = '';
-                foreach ( $my_posts as $p ){
-                    $output .= '<article class="news-article';
-                    if(has_post_thumbnail($p->ID)) $output .= ' news-article-no-image';
-                    $output .= '">';
+                echo build_posts( $newsPosts );
+            ?>      
+        </div>
+    </div>
+                
+    <div class="main-content-container">
+        <h2 class="fp-heading">Spielberichte</h2>
 
-                    $output .= '<a href="' . get_permalink($p->ID). '">';
+        <div class="news">
+            <?php 
 
-                    $output .= get_the_post_thumbnail($p->ID, 'full', ['class' => 'news-article-image']);
+                $categorySpielberichtId = get_cat_ID( 'Spielbericht' );
+            
+                $argsSpielberichte = array(
+                    'numberposts'	=> 6,
+                    'category'		=> $categorySpielberichtId,
+                );
 
-                    $output .= '<div class="news-article-content';
-                    if(has_post_thumbnail($p->ID)) $output .= 'news-article-content-no-image';
-                    $output .= '">';
+                $spielberichtPosts = get_posts( $argsSpielberichte );
 
-                    $output .= '<p class="news-article-date">' . get_the_date( 'd.m.Y' , $p->ID) . '</p>';
-                    $output .= '<h3>' . get_the_title($p->ID) . '</h3>';
-                    $output .= '<p>' .  get_the_excerpt($p->ID) . '</p>';
-
-                    $output .= '</div>';
-                    $output .= '</a>';
-                    $output .= '</article>';
-                }
-
-                echo $output;
+                echo build_posts( $spielberichtPosts );
             ?>      
         </div>
 
@@ -129,4 +129,34 @@
     
 <?php
     get_footer();
+?>
+
+<?php
+    function build_posts( $posts ) 
+    {
+        $output = '';
+        foreach ( $posts as $post ){
+            $output .= '<article class="news-article';
+            if(!has_post_thumbnail($post->ID)) $output .= ' news-article-no-image';
+            $output .= '">';
+
+            $output .= '<a href="' . get_permalink($post->ID). '">';
+
+            $output .= get_the_post_thumbnail($post->ID, 'full', ['class' => 'news-article-image']);
+
+            $output .= '<div class="news-article-content';
+            if(!has_post_thumbnail($post->ID)) $output .= ' news-article-content-no-image';
+            $output .= '">';
+
+            $output .= '<p class="news-article-date">' . get_the_date( 'd.m.Y' , $post->ID) . '</p>';
+            $output .= '<h3>' . get_the_title($post->ID) . '</h3>';
+            $output .= '<p>' .  get_the_excerpt($post->ID) . '</p>';
+
+            $output .= '</div>';
+            $output .= '</a>';
+            $output .= '</article>';
+        }
+
+        return $output;
+    }
 ?>
