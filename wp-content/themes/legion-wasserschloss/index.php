@@ -104,7 +104,7 @@
 
                     $output .= get_the_post_thumbnail($p->ID, 'full', ['class' => 'news-article-image']);
 
-                    $output .= '<div class="news-article-content'
+                    $output .= '<div class="news-article-content';
                     if(has_post_thumbnail($p->ID)) $output .= 'news-article-content-no-image';
                     $output .= '">';
 
