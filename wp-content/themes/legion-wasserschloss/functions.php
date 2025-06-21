@@ -11,6 +11,7 @@ function styles(){
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'teams', get_template_directory_uri() . '/team.css' );
     wp_enqueue_style( 'player', get_template_directory_uri() . '/player.css' );
+    wp_enqueue_style( 'news', get_template_directory_uri() . '/news.css');
     wp_enqueue_style( 'forms-cf7', get_template_directory_uri() . '/forms_cf7.css' );
 }
 
