@@ -59,7 +59,7 @@
                     Potenzial in ihren jeweiligen Leistungsklassen an 11 Standorten zu verwirklichen.
                 </p>
                 <div class="cta-link">
-                    <a class="link-button" href="fusionsprozess">Zum Fusionsprozess</a>
+                    <a class="link-button" href="hallenguide">Unsere Hallen</a>
                 </div>
             </div>
         </div>
