@@ -108,7 +108,7 @@
         <div class="news">
             <?php 
 
-                $categorySpielberichtId = get_cat_ID( 'Spielbericht' );
+                $categorySpielberichtId = get_cat_ID( 'Spielberichte' );
             
                 $argsSpielberichte = array(
                     'numberposts'	=> 6,
