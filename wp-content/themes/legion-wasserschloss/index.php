@@ -44,30 +44,6 @@
 
 <section class="content-section">
     <div class="main-content-container">
-        <h2 class="fp-heading">🎁 Spendenaktion für das Projekt «Unihockey für Straßenkinder»🎁
-</h2>
-
-        <div class="region-content">
-            <div>
-                <p>Die Advents- und Weihnachtszeit steht unter anderem für Dankbarkeit und Nächstenliebe. Als Verein Legion Wasserschloss möchten wir in diesem Jahr ein Zeichen setzen und gemeinsam etwas Gutes tun 🤝.</p>
-                <p>Im Rahmen unseres Adventskalenders unterstützen wir die Aktion „Unihockey für Straßenkinder“, ein Projekt, das Kindern und Jugendlichen weltweit Zugang zu Sport, Teamgeist und neuen Perspektiven ermöglicht 🌍🏑.</p>
-                <p>Die Aktion wird durch unseren Verein vom 8. Dezember bis zum 26. Dezember 2025 durchgeführt. Spenden werden sowohl in finanzieller 💛 als auch in materieller Form entgegengenommen 📦. Weitere Informationen finden sich im zugehörigen Newsbeitrag.</p>
-                <p>Wir danken herzlich für jede Unterstützung und wünschen eine angenehme Adventszeit🎄</p> 
-                <div id="rnw-solution-embed-kbqyj" style="width: 100%; margin: 0 auto; max-width: 580px;"></div>
-            </div>
-            <script type="module">
-                import {SolutionEmbed} from "https://cdn.jsdelivr.net/npm/@raisenow/solution-embed@1/dist/index.js"
-                SolutionEmbed.render("#rnw-solution-embed-kbqyj", {
-                    "url": "https://pay.raisenow.io/kbqyj",
-                    "info": false,
-                })
-            </script>
-        </div>
-    </div>
-</section>
-
-<section class="content-section">
-    <div class="main-content-container">
         <h2 class="fp-heading">Unsere Region</h2>
 
         <div class="region-content">
