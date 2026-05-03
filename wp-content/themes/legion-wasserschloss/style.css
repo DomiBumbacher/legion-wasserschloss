@@ -208,8 +208,21 @@ a {
 .hero-text h1 {
   color: var(--font-white);
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+  margin-top: 15px;
+}
+
+/* Buttons get cut off when there is to little height */
+@media only screen and (min-height: 720px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+    
+  }
+}
+
+.cta-links {
+  padding-bottom: 1rem;
 }
 
 .cta-link {
@@ -228,7 +241,7 @@ a {
   .hero-text h1 {
     color: var(--font-white);
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   .hero-text p {

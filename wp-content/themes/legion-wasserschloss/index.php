@@ -16,9 +16,15 @@
                     Ob Spitzen- oder Breitensport bei uns findest du alles rund ums Unihockey
                     in der Region Baden-Brugg.
                 </p>
-                <div class="hero-cta cta-link">
-                    <a class="link-button inverted hero-cta-link" href="legion-beitreten">Legion kontaktieren</a>
-                </div>
+                
+                <div class="hero-cta cta-links">
+                        <div class="hero-cta cta-link">
+                            <a class="link-button inverted hero-cta-link" href="probetraining">Probetraining</a>
+                        </div>
+                        <div class="hero-cta cta-link">
+                            <a class="link-button inverted hero-cta-link" href="legion-beitreten">Legion kontaktieren</a>
+                        </div>
+                    </div>
             </div>
         </div>
 
