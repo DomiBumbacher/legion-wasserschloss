@@ -93,7 +93,7 @@ function get_next_game_details($team_id = 432237) {
                 $candidate_date = $parsed_date->format('Y-m-d');
             }
 
-            if ($candidate_date > $today && ($next_game_date === null || $candidate_date < $next_game_date)) {
+            if ($candidate_date >= $today && ($next_game_date === null || $candidate_date < $next_game_date)) {
                 $next_game_date = $candidate_date;
                 $next_game_id = $row->link->ids[0] ?? null;
             }
