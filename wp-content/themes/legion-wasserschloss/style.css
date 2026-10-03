@@ -361,6 +361,21 @@ a {
   text-align: center;
 }
 
+.event-widget-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-widget-iframe {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  border: 0;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 1200px) {
   .next-game-grid {
     max-height: 250px;

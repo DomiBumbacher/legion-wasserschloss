@@ -64,6 +64,12 @@
             </div>
         </div>
     </div>
+    <div class="main-content-container event-widget-container">
+        <h2 class="fp-heading">Nächste Events</h2>
+        <iframe class="event-widget-iframe" 
+            src='https://www.holdsport.net/widgets/legion-wasserschloss?mobile=false&hide_profile_mobile=false&hide_profile_email=false&content_type=activities_list&show_price_type_table=false&allow_price_type_selection=false&activity_types=46809'
+        height='520'></iframe>
+    </div>
 </section>
 <?php endif; ?>
 
