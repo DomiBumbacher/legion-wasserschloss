@@ -313,13 +313,39 @@ a {
   grid-template-columns: 4fr 1fr 4fr;
 }
 
+.next-game-team-grid {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  text-align: center;
+}
+
+.next-game-home-grid {
+  grid-column: 1;
+}
+
+.next-game-away-grid {
+  grid-column: 3;
+}
+
 .next-game-team-img-grid {
+  display: block;
+  flex: 0 0 120px;
   width: 120px;
   height: 120px;
   object-fit: contain;
   justify-self: center;
   align-self: center;
   padding-top: 10px;
+}
+
+.next-game-team-name-grid {
+  max-width: 100%;
+  padding: 0 0.5rem;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
 
 .next-game-divider-grid {
@@ -357,10 +383,14 @@ a {
   }
 
   .next-game-team-img-grid {
+    flex-basis: 180px;
     width: 180px;
     height: 180px;
-    grid-row: 1/4;
     padding-top: 0px;
+  }
+
+  .next-game-team-grid {
+    grid-row: 1/4;
   }
 }
 

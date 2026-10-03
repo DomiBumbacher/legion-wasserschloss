@@ -31,22 +31,41 @@
     </div>
 </div>
 
-<!-- TODO: Add with games
+<?php
+    $nextGame = get_next_game_details();
+    $nextGameId = $nextGame['id'];
+    $homeTeamLogo = $nextGame['home_team_logo'];
+    $homeTeamName = $nextGame['home_team_name'];
+    $awayTeamLogo = $nextGame['away_team_logo'];
+    $awayTeamName = $nextGame['away_team_name'];
+    $gameDate = $nextGame['game_date'];
+    $gameTime = $nextGame['game_time'];
+    $gameLocation = $nextGame['game_location'];
+?>
+
+<?php if ($nextGameId !== null && $homeTeamName !== '' && $awayTeamName !== ''): ?>
 <section class="content-section bg-blue">
     <div class="main-content-container ">
         <h2 class="fp-heading">Nächstes Spiel</h2>
-
         <div class="next-game-grid">
-            <img class="next-game-team-img-grid" src="<?php echo get_bloginfo('template_url') ?>/img/logo.svg">
+            <div class="next-game-team-grid next-game-home-grid">
+                <img class="next-game-team-img-grid" src="<?php echo esc_url($homeTeamLogo); ?>" title="<?php echo esc_attr($homeTeamName); ?>" alt="<?php echo esc_attr($homeTeamName); ?>">
+                <span class="next-game-team-name-grid"><?php echo esc_html($homeTeamName); ?></span>
+            </div>
             <span class="next-game-divider-grid"><i><b>vs</b></i></span>
-            <img class="next-game-team-img-grid" src="<?php echo get_bloginfo('template_url') ?>/img/opponent.png">
+            <div class="next-game-team-grid next-game-away-grid">
+                <img class="next-game-team-img-grid" src="<?php echo esc_url($awayTeamLogo); ?>" title="<?php echo esc_attr($awayTeamName); ?>" alt="<?php echo esc_attr($awayTeamName); ?>">
+                <span class="next-game-team-name-grid"><?php echo esc_html($awayTeamName); ?></span>
+            </div>
             <div class="next-game-info-grid">
-                <p>Samstag, 09.03.2024 20:00<br>Go Easy Arena</p>
+                <p>
+                <?php echo esc_html($gameDate); ?> <?php echo esc_html($gameTime); ?><br>
+                <?php echo esc_html($gameLocation); ?></p>
             </div>
         </div>
     </div>
 </section>
--->
+<?php endif; ?>
 
 <section class="content-section">
     <div class="main-content-container">
