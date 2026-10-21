@@ -46,7 +46,7 @@
 <?php if ($nextGameId !== null && $homeTeamName !== '' && $awayTeamName !== ''): ?>
 <section class="content-section bg-blue">
     <div class="main-content-container ">
-        <h2 class="fp-heading">Nächstes Spiel</h2>
+        <h2 class="fp-heading">Nächstes Spiel 2. Liga GF</h2>
         <div class="next-game-grid">
             <div class="next-game-team-grid next-game-home-grid">
                 <img class="next-game-team-img-grid" src="<?php echo esc_url($homeTeamLogo); ?>" title="<?php echo esc_attr($homeTeamName); ?>" alt="<?php echo esc_attr($homeTeamName); ?>">
@@ -65,7 +65,7 @@
         </div>
     </div>
     <div class="main-content-container event-widget-container">
-        <h2 class="fp-heading">Nächste Events</h2>
+        <h2 class="fp-heading">Nächste Anlässe</h2>
         <iframe class="event-widget-iframe" 
             src='https://www.holdsport.net/widgets/legion-wasserschloss?mobile=false&hide_profile_mobile=false&hide_profile_email=false&content_type=activities_list&show_price_type_table=false&allow_price_type_selection=false&activity_types=46809'
         height='520'></iframe>
